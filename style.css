@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+* {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+hmtl,
+body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
+section {
+  padding: 3rem 9%  0rem 9%;
+}
+
+P {
+  margin: 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 3rem;
+  color: #ba271b;
+  border: 1px solid #ba271b;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: center;
+  margin: 8px;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #ba271b;
+  border-radius: 6px;
+}
+
+/*-------Header--------*/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem 9%;
+  z-index: 1000;
+  background: #e5e5e5;
+}
+
+.header.active {
+  padding: 2rem 9%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header .logo-contents {
+  display: flex;
+  text-align: center;
+}
+
+.logo-contents .logo-1 img {
+  width: 100%;
+  background-color: transparent;
+}
+
+.logo-contents .logo-2 img {
+  width: 100%;
+  background-color: transparent;
+}
+
+.header .logo-contents .logo-text2 {
+  margin-left: 15px;
+  font-family: "BuenosAiresWeb";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 10px;
+  color: #969696;
+  text-transform: none;
+}
+
+/*-------Navbar------*/
+.header .navbar a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.header .navbar a:hover {
+  color: #ba271b;
+  border-bottom: 2px solid #ba271b;
+  width: 100px;
+}
+
+.header .navbar .active {
+  color: #ba271b;
+  border-bottom: 2px solid #ba271b;
+  width: 100px;
+}
+
+.header #menu-btn {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.header #login-btn i {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+/*-------Small-Rectangle-----*/
+
+.rectangle-1 .small-rect {
+  margin-top: 100px;
+  width: 100%;
+  margin-left: 130px;
+  background-color: transparent;
+}
+
+/*----------Ellipse and Text--------*/
+
+.ellipse-text{
+  margin-bottom: 20px;
+}
+
+.ellipse-text .ellipse-text-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  top: -40px;
+}
+
+.ellipse-text-container .ellipse-1 {
+  transform: rotate(10deg);
+  margin-left: 10px;
+}
+
+.ellipse-text-container .ellipse-1 img {
+  width: 100%;
+}
+
+.ellipse-text-container .text-1 {
+  margin-right: 28.5rem;
+  text-align: center;
+}
+
+.ellipse-text-container .text-1 h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #333333;
+  text-transform: none;
+  text-align: center;
+}
+
+.ellipse-text-container .text-1 p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.49);
+  text-transform: none;
+}
+
+/*---------pricing---------*/
+
+.pricing-menu{
+  margin-bottom: 3rem;
+}
+
+.pricing-menu .pricing-containter{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem;
+}
+
+.pricing-containter .gain{
+background: rgba(150, 150, 150, 0.05);
+border-radius: 15px;
+padding: 5rem 10rem;
+height: 485px;
+}
+
+.pricing-containter .gain h2{
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 34px;
+  color: #333333; 
+  margin-bottom: 40px;
+}
+
+.pricing-containter .gain .check-box{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.gain .check-box h3{
+  font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+color: rgba(0, 0, 0, 0.65);
+margin-bottom: 40px;
+transform: none;
+text-align: start;
+}
+
+.gain .check-box i{
+color: #C55047;
+font-size: 18px;
+}
+
+/*---------transactions---------*/
+
+.pricing-containter .transactions{
+  height: 485px;
+}
+
+.transactions .services-box{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border: 1px solid rgba(186, 39, 27, 0.3);
+  border-radius: 15px;
+  padding: 20px 20px;
+  margin-bottom: 29.7px;
+}
+
+.services-box .img-text{
+  display: flex;
+   justify-content: space-between;
+  text-align: center;
+}
+
+.services-box .img-text .img{
+  padding: 15px;
+  background: rgba(197, 80, 71, 0.1);
+  border-radius: 50%;
+}
+
+.img-text .text-3{
+  margin-left: 30px;
+  text-align: start;
+}
+
+.img-text .text-3 h4{
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+color: #333333;
+text-transform: none;
+}
+
+.img-text .text-3 p{
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+display: flex;
+align-items: center;
+color: #C55047;
+text-transform: none;
+background: rgba(197, 80, 71, 0.1);
+backdrop-filter: blur(54px);
+border-radius: 16px;
+padding: 5px 10px;
+ justify-content: center;
+}
+
+.transactions .services-box .payment{
+font-weight: 700;
+font-size: 20px;
+line-height: 120%;
+align-items: center;
+text-align: center;
+color: #C55047;
+margin-right: 20px;
+margin-top: 10px;
+}
+
+/*---------Clients--------*/
+
+.clients .client-text h2{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------Media Query-------*/
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
+  .header.active {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header #menu-btn {
+    display: block;
+  }
+
+  #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+
+  .header #login-btn i {
+    display: block;
+  }
+
+  /*------navbar-----*/
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #000000;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    background-color: #e5e5e5;
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .header .navbar a {
+    margin: 8px;
+    display: block;
+    font-size: 14px;
+  }
+
+  /*---------login-btn---------*/
+  #login.fa-times {
+    transform: rotate(180deg);
+  }
+
+  .header .btn-login {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #000000;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    background-color: #e5e5e5;
+  }
+
+  .header .btn-login.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .header .btn-login .btn {
+    display: block;
+  }
+
+  /*---------ellipse-text---------*/
+
+  .ellipse-text-container .text-1 h2 {
+    font-size: 20px;
+    white-space: nowrap; 
+ }
+
+ .ellipse-text-container .text-1 p {
+  font-size: 17px;
+ }
+
+/*---------pricing---------*/
+
+.pricing-containter .gain{
+  padding: 3.5rem 5rem;
+  }
+
+ .pricing-containter .gain h2{
+  font-size: 17px;
+  white-space: nowrap;
+ }
+
+ .gain .check-box i{
+  font-size: 16px;
+  }
+
+  /*.services-box .img-text .img{
+    padding: 15px;
+    border-radius: 50%;
+    w*/
+  
+
+
+
+
+  
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 250px) and (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+ 
+ }
+
+
+
+}
