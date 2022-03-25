@@ -236,6 +236,11 @@ transform: none;
 text-align: start;
 }
 
+.gain .check-box:not(:last-child){
+  
+  margin-bottom: none;
+}
+
 .gain .check-box i{
 color: #C55047;
 font-size: 18px;
