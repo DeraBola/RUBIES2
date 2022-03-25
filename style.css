@@ -236,8 +236,7 @@ transform: none;
 text-align: start;
 }
 
-.gain .check-box:not(:last-child){
-  
+.gain .check-box:last-child h3:last-child{
   margin-bottom: none;
 }
 
